@@ -28,15 +28,15 @@ body {
 }
 
 a:link {
-    color: rgb(253, 223, 228);
+    color: rgb(118, 201, 231);
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(118, 201, 231);
+    color: rgb(253, 223, 228);
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration-color: rgb(253, 223, 228);
 }
 
 a:active {
