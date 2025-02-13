@@ -4,7 +4,7 @@ function searchDuckDuckGo() {
     window.location.href = url;
 }
 
-document.addEventListener('submit', searchDuckDuckGo)
+addEventListener('submit', searchDuckDuckGo)
 
 document.addEventListener('keydown', function(event) {
     if (event.key) {
