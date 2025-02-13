@@ -53,9 +53,10 @@ input#searchInput{
 }
 
 @media screen and (max-width: 875px) {
+
     h1 {
         font-size: 45px;
-        margin: 0 15px;
+        margin: 0 auto;
         padding: 15px;
     }
 
@@ -65,7 +66,6 @@ input#searchInput{
     }
 
     input#searchInput{
-        margin: 0 auto;
         width: 80%;
     }
 
