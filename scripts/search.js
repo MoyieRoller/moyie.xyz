@@ -4,7 +4,11 @@ function searchDuckDuckGo() {
     window.location.href = url;
 }
 
-addEventListener('submit', searchDuckDuckGo)
+document.addEventListener('keydown', function(event) {
+    if(event.key == 'Enter') {
+        searchDuckDuckGo();
+    }
+});
 
 document.addEventListener('keydown', function(event) {
     if (event.key) {
