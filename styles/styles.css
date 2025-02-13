@@ -36,6 +36,7 @@ a:link {
 a:visited {
     color: rgb(253, 223, 228);
     background-color: transparent;
+    text-decoration: underline;
     text-decoration-color: rgb(253, 223, 228);
 }
 
