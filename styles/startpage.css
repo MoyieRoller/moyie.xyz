@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url("../assets/fonts/pacifico-latin-400-normal.ttf");
+}
+
+:root {
+    --dark-green-grey: #1c1e1d;
+    --light-grey: #444645;
+    --off-white: #fefdf9;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 125px;
+    padding: 0 15px;
+    background: linear-gradient(45deg, #e6dbe8, #532bf2);
+    background-clip: text;
+    color: transparent;
+  }
+
+h1:after{
+    background: none;
+    content: attr(data-text);
+    z-index: -1;
+    position: relative;
+    text-shadow: 0 0 1em rgba(129, 129, 206, 0.57), 0 0 0.2em rgba(145, 145, 206, 0.263);
+}
+  
+.searchBar{
+    width: 50rem;
+}
+
+input#searchInput{
+    margin: 0 auto;
+    width: 93%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: var(--off-white);
+    background-color: var(--light-grey);
+    border: 3px solid var(--off-white);
+    border-radius: 100px;
+    outline: none;
+}
+
+.searchIcon{
+    position: relative;
+    float: right;
+    width: 25px;
+    height: 25px;
+    top: -38px;
+    right: 22px;
+}
