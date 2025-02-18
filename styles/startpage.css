@@ -1,30 +1,27 @@
-@font-face {
-    font-family: 'Pacifico';
-    src: url("../assets/fonts/pacifico-latin-400-normal.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
     --dark-green-grey: #1c1e1d;
     --light-grey: #444645;
     --off-white: #fefdf9;
+    --gradient-start: #e6dbe8;
+    --gradient-end: #532bf2;
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
+    font-family: "Pacifico", serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 125px;
-    padding: 0 15px;
-    background: linear-gradient(45deg, #e6dbe8, #532bf2);
-    background-clip: text;
-    color: transparent;
+    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 85px;
+    text-align: center;
+    padding: 40px 10px 95px;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 0 1em rgba(129, 129, 206, 0.57)) drop-shadow(0 0 0.2em rgba(145, 145, 206, 0.263));
   }
-
-h1:after{
-    background: none;
-    content: attr(data-text);
-    z-index: -1;
-    position: relative;
-    text-shadow: 0 0 1em rgba(129, 129, 206, 0.57), 0 0 0.2em rgba(145, 145, 206, 0.263);
-}
   
 .searchBar{
     width: 50rem;
@@ -46,11 +43,11 @@ input#searchInput{
 .searchIcon{
     position: relative;
     float: right;
-    width: 25px;
-    height: 25px;
-    top: -38px;
+    width: 27px;
+    height: 27px;
+    top: -39px;
     right: 22px;
-}
+} 
 
 @media screen and (max-width: 875px) {
 
@@ -72,7 +69,7 @@ input#searchInput{
     .searchIcon{
         width: 20px;
         height: 20px;
-        top: -36px;
+        top: -35px;
         right: 20px;
     }
 }
