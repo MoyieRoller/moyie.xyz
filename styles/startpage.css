@@ -17,6 +17,7 @@ h1 {
     font-style: normal;
     font-size: 125px;
     background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 85px;
